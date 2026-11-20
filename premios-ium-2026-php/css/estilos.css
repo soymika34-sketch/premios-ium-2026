@@ -1,0 +1,75 @@
+/* PREMIOS IUM 2026 - hoja de estilos única */
+:root{--oro:#d4af37;--oro-claro:#f5d67b;--oro-medio:#e8c96a;--oro-osc:#c9a23a;--vino:#5a1220;--fondo-card:#1a0505}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:radial-gradient(circle at center,#5a1220 0%,#2b060e 60%,#140305 100%) fixed;font-family:Arial,sans-serif;color:#fff;min-height:100vh}
+.pagina{max-width:1000px;margin:0 auto;padding:20px 15px 40px;text-align:center;border-top:4px solid var(--oro)}
+.gala{display:inline-block;border:2px solid var(--oro);border-radius:30px;padding:8px 22px;color:var(--oro-medio);letter-spacing:3px;font-size:14px;background:rgba(0,0,0,.4);font-weight:bold;margin-top:10px}
+.titulo{color:var(--oro-claro);font-size:68px;font-weight:900;line-height:1;margin-top:18px;text-shadow:3px 3px 8px #000}
+.titulo span{display:block;font-size:72px;color:var(--oro-osc)}
+.menu{display:flex;border:2px solid var(--oro);border-radius:15px;overflow:hidden;margin-top:25px;background:#000;flex-wrap:wrap}
+.menu a{flex:1;text-decoration:none;color:var(--oro-medio);font-weight:bold;font-size:15px;padding:15px 5px;border-right:1px solid var(--oro);min-width:110px;transition:.2s}
+.menu a:last-child{border-right:none}
+.menu a:hover,.menu a:focus-visible{background:rgba(232,201,106,.25);outline:none}
+.menu a.activo{background:var(--oro-medio);color:#000}
+.cinta{background:linear-gradient(var(--oro-claro),var(--oro-osc));color:#000;font-size:36px;font-weight:900;letter-spacing:3px;padding:10px 20px;margin-top:28px;display:block;border-radius:5px;box-shadow:0 4px 10px #000}
+.frase{border:1px solid var(--oro);border-radius:20px;background:rgba(0,0,0,.35);padding:25px 20px;margin:30px auto 0;font-size:22px;line-height:1.5;max-width:700px}
+.mascota img{width:320px;max-width:90%;height:auto;margin-top:20px}
+.abajo{display:flex;align-items:center;justify-content:center;gap:15px;margin-top:20px;flex-wrap:wrap}
+.abajo img{width:260px;max-width:90%;height:auto}
+.frase-final{font-size:46px;color:var(--oro-medio);font-style:italic;font-weight:bold;line-height:1.1;font-family:Georgia,serif}
+/* grids */
+.grid{display:grid;gap:18px;margin-top:25px}
+.grid.dos{grid-template-columns:1fr 1fr}
+.grid.tres{grid-template-columns:repeat(3,1fr)}
+.cat{background:var(--fondo-card);border:2px solid var(--oro);border-radius:20px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:var(--oro-claro);font-weight:bold;font-size:18px;transition:.3s}
+.cat:hover,.cat:focus-visible{background:var(--oro);color:#000;transform:scale(1.03);outline:none}
+.tarjeta{background:var(--fondo-card);border:3px solid var(--oro);border-radius:20px;overflow:hidden;text-decoration:none;color:#fff;transition:.3s;display:block}
+.tarjeta:hover,.tarjeta:focus-visible{background:transparent;border-color:transparent;transform:scale(1.03);outline:none}
+.etiqueta{background:linear-gradient(var(--oro-claro),var(--oro-osc));color:#000;font-weight:900;font-size:16px;padding:10px 5px;letter-spacing:1px}
+.cuerpo{display:flex;gap:12px;padding:15px;align-items:center;text-align:left}
+.foto{width:100px;height:120px;flex-shrink:0;border:2px solid var(--oro);border-radius:12px;background:radial-gradient(circle,#5a1220,#140305);display:flex;align-items:center;justify-content:center;font-size:48px}
+.cuerpo p{font-size:15px;line-height:1.4}
+.estrella{display:block;color:var(--oro);font-size:18px;padding-bottom:12px}
+/* formularios */
+.contenido{display:flex;align-items:center;justify-content:center;gap:25px;margin-top:25px;flex-wrap:wrap}
+.formulario{background:var(--fondo-card);border:2px solid var(--oro);border-radius:20px;padding:45px 25px 25px;width:420px;max-width:100%;position:relative;text-align:left}
+.formulario.sin-icono{padding-top:25px;margin:25px auto 0;width:560px}
+.icono-user{position:absolute;top:-35px;left:50%;transform:translateX(-50%);width:70px;height:70px;background:#000;border:3px solid var(--oro);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:35px}
+.campo{display:flex;align-items:center;gap:12px;background:#140305;border:2px solid var(--oro);border-radius:25px;padding:12px 18px;margin-bottom:15px}
+.campo input,.campo select{background:none;border:none;outline:none;color:#fff;font-size:18px;width:100%}
+.campo select option{background:#140305}
+.campo input::placeholder{color:#ddd}
+.btn{background:linear-gradient(var(--oro-claro),var(--oro-osc));color:#000;border:none;border-radius:25px;padding:14px;width:100%;font-size:22px;font-weight:900;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--oro-claro);transform:scale(1.02)}
+.mensaje{padding:10px;border-radius:10px;margin-bottom:15px;font-weight:bold;text-align:center}
+.mensaje.error{background:#c00}
+.mensaje.ok{background:#1e7a3a}
+.dato{margin-top:12px;font-size:14px;color:var(--oro-medio);text-align:center}
+.opciones label{display:flex;align-items:center;gap:12px;background:#140305;border:2px solid var(--oro);border-radius:15px;padding:12px 16px;margin-bottom:10px;cursor:pointer;font-size:18px}
+.opciones label:hover{background:rgba(212,175,55,.2)}
+.opciones input{accent-color:var(--oro);width:20px;height:20px}
+.desc{margin-top:18px;font-size:18px;color:var(--oro-medio)}
+.volver{display:inline-block;margin-top:20px;color:var(--oro-medio)}
+@media(max-width:900px){.grid.tres{grid-template-columns:repeat(2,1fr)}.titulo{font-size:54px}.titulo span{font-size:58px}}
+@media(max-width:600px){
+ .gala{font-size:11px;letter-spacing:1px;padding:6px 12px}
+ .titulo{font-size:42px}.titulo span{font-size:46px}
+ .menu a{font-size:12px;padding:12px 2px;min-width:0}
+ .cinta{font-size:26px}
+ .grid.dos,.grid.tres{grid-template-columns:1fr}
+ .frase{font-size:18px}.frase-final{font-size:34px}
+ .formulario{padding:40px 18px 20px}
+}
+/* --- PHP: votación --- */
+.foto img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.contador{border:2px solid var(--oro);border-radius:15px;background:rgba(0,0,0,.45);padding:14px;margin-top:20px;font-size:18px;color:var(--oro-medio)}
+.contador b{color:var(--oro-claro);font-size:22px}
+.tarjeta.fija:hover{background:var(--fondo-card);border-color:var(--oro);transform:none}
+.tarjeta .btn{width:calc(100% - 30px);margin:0 15px 15px;font-size:18px;padding:10px}
+.btn[disabled]{opacity:.5;cursor:not-allowed;transform:none}
+.subtitulo{color:var(--oro-claro);font-size:26px;margin-top:35px;text-align:left;border-bottom:2px solid var(--oro);padding-bottom:6px}
+.formulario select{width:100%}
+.lista-votos{text-align:left;margin-top:12px;list-style:none}
+.lista-votos li{padding:6px 0;border-bottom:1px solid rgba(212,175,55,.3)}
+.enlace{color:var(--oro-medio)}
+.vacio{margin-top:25px;color:var(--oro-medio)}
